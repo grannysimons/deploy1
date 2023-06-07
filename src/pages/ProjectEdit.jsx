@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { authContext } from '../contexts/auth.context';
 
-let baseURL = 'http://localhost:5005/api/projects/';
+let baseURL = import.meta.env.VITE_API_URL + 'api/projects/';
 
 export default function ProjectEdit() {
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 
-let baseURL = 'http://localhost:5005/api/projects/';
+let baseURL = import.meta.env.VITE_API_URL + 'api/projects/';
 
 const projectsContext = createContext();
 

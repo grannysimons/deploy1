@@ -4,7 +4,7 @@ import axios from 'axios';
 import {Navigate, useNavigate} from 'react-router-dom';
 import { authContext } from '../contexts/auth.context';
 
-let baseUrl = 'http://localhost:5005/auth';
+let baseUrl = import.meta.env.VITE_API_URL + '/auth';
 
 export default function SignupPage() {
   const [username, setUsername] = useState('');

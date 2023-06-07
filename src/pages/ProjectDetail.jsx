@@ -5,7 +5,7 @@ import CreateTask from '../components/CreateTask';
 import { projectsContext } from '../contexts/projects.context';
 import { authContext } from '../contexts/auth.context';
 
-let baseURL = 'http://localhost:5005/api/projects/';
+let baseURL = import.meta.env.VITE_API_URL + 'api/projects/';
 
 export default function ProjectDetail() {
 
